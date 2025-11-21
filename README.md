@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="C:\prompt-playbook\Assets\ChatGPT Image Nov 21, 2025, 11_42_15 AM.png" alt="Prompt Playbook Banner" width="100%">
+  <img src="C:\"prompt-playbook\Assets\"ChatGPT Image Nov 21, 2025, 11_42_15 AM.png" alt="Prompt Playbook Banner" width="100%">
 </p>
 
 # 🚀 Prompt Playbook
