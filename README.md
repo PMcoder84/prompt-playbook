@@ -1,8 +1,3 @@
-<!-- Banner -->
-<p align="center">
-  <img src="C:\"prompt-playbook\Assets\"ChatGPT Image Nov 21, 2025, 11_42_15 AM.png" alt="Prompt Playbook Banner" width="100%">
-</p>
-
 # 🚀 Prompt Playbook
 
 Welcome to **Prompt Playbook** — my personal collection of high-impact prompts that help me think faster, write sharper, and ship better as a Product Manager.
