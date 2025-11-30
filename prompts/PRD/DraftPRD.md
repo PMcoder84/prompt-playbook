@@ -63,9 +63,9 @@ Example:
 Output: Grow activation rate by 20% (% of sign ups who visit again in 7 days)
 
 Inputs: 
-# users who visit topic selector screen
-# who select a topic, # of topics selected
-# who pin during their first session
+- users who visit topic selector screen
+- who select a topic, # of topics selected
+- who pin during their first session
 
 Requirements
 
