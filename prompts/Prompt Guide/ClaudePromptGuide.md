@@ -18,20 +18,25 @@ Use this guide to:
 ## 🧠 The Prompt
 
 <instructions>
-7 advanced techniques to get the most out of Claude
+
+### 7 advanced techniques to get the most out of Claude
+
 To make this guide as practical as possible, let’s use the techniques below to improve this 1-line prompt for editing interview transcripts:
 
-Edit this interview transcript - remove filler words and clean up grammar: (Paste here)
+` Edit this interview transcript - remove filler words and clean up grammar: (Paste here)`
 
 This prompt will be 20x longer when we’re done!
 
-1. Start with your data and end with instructions
+*1. Start with your data and end with instructions*
+
 Let’s start with a tip that almost nobody knows — starting your prompt with your data and ending with your instructions can improve Claude’s response quality by 30%.
 
 Here’s our prompt updated to start with the transcript first:
 
+<pre>
 (Paste here)
 Edit this interview transcript - remove filler words and clean up grammar.
+</pre>
 
 2. Use XML tags to structure your prompt
 Claude can sometimes mix up your data and instructions if you don’t label them clearly. The easiest way to label each section is to use XML.
