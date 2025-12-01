@@ -23,7 +23,7 @@ Use this guide to:
 
 To make this guide as practical as possible, let’s use the techniques below to improve this 1-line prompt for editing interview transcripts:
 
-` Edit this interview transcript - remove filler words and clean up grammar: (Paste here)`
+<pre>Edit this interview transcript - remove filler words and clean up grammar: (Paste here)</pre>
 
 This prompt will be 20x longer when we’re done!
 
@@ -38,11 +38,13 @@ Here’s our prompt updated to start with the transcript first:
 Edit this interview transcript - remove filler words and clean up grammar.
 </pre>
 
-2. Use XML tags to structure your prompt
+*2. Use XML tags to structure your prompt*
+
 Claude can sometimes mix up your data and instructions if you don’t label them clearly. The easiest way to label each section is to use XML.
 
 Here’s our prompt updated with XML tags:
 
+<pre>
 <draft>
 (Paste here)
 </draft>
@@ -50,12 +52,16 @@ Here’s our prompt updated with XML tags:
 <instructions>
 Edit this interview transcript - remove filler words and clean up grammar.
 </instructions>
+</pre>
 
-3. Give Claude a specific role and task
+
+*3. Give Claude a specific role and task*
+
 A clear role and task can significantly improve Claude’s response accuracy and writing style. Best of all, you can ask Claude to create the role itself.
 
 Here’s our prompt updated with a role and task:
 
+<pre>
 <draft>
 (Paste here)
 </draft>
@@ -65,14 +71,17 @@ You are an expert transcript editor with over 15 years of experience refining sp
 
 Your task is to do a light edit on the <draft> to remove filler words and clean up grammar.
 </instructions>
+</pre>
 
-4. Give Claude space to think (chain of thought)
+*4. Give Claude space to think (chain of thought)*
+
 Now we get to the good stuff! “Chain of thought” is an advanced technique where you ask Claude to think through complex tasks step-by-step and share its thinking out loud using XML tags.
 
 This technique has been proven to improve AI response quality by up to 39%
 
 Here’s our prompt updated to use chain of thought:
 
+<pre>
 <draft>
 (Paste here)
 </draft>
@@ -92,14 +101,17 @@ Present your edited version within <edited_transcript> tags. Ensure your edits a
 Think through each step carefully before providing your final output.
 
 </instructions>
+</pre>
 
-5. Include great output and input pair examples
+*5. Include great output and input pair examples*
+
 In my building AI products guide, I wrote about how fine-tuning just means giving AI a large, quality dataset of output and input pairs to train on. So it’s important to:
 
 Help Claude understand what great output looks like given a set of inputs.
 
 Here’s our prompt updated to include a best-in-class example of what an edited transcript looks like given a raw transcript:
 
+<pre>
 <example_edit>
 (Paste here)
 </example_edit>
@@ -121,12 +133,16 @@ Present your edited version within <edited_transcript> tags. Ensure your edits a
 
 Think through each step carefully before providing your final output.
 </instructions>
+</pre>
 
-6. Give clear instructions based on trial and error
+
+*6. Give clear instructions based on trial and error*
+
 Sometimes, asking Claude to perform a task based on examples isn’t enough. You also have to give it clear instructions based on trial and error.
 
 Here’s our prompt updated to include more specific instructions based on mistakes that Claude made in its responses:
 
+<pre>
 …
 
 Your task is to do a light pass edit on a <draft> that you should ask me to share next. Follow these steps:
@@ -153,7 +169,10 @@ If you encounter sections requiring significant or unclear changes, insert a not
 
 Present your edited version within <edited_transcript> tags. Ensure your edits are consistent with the observed style and guidelines.
 
-7. Ask Claude to improve your prompt
+</pre>
+
+*7. Ask Claude to improve your prompt*
+
 Despite the “60-80% of original word count” requirement above, Claude still gave me edits that cut over 50% of the words. So here’s my last pro tip:
 
 Ask Claude to improve your prompt.
@@ -162,6 +181,7 @@ I told Claude, “You’re still cutting over 50% of the words. Maybe it’s eas
 
 Here’s our final prompt with instructions to split long outputs into multiple responses:
 
+<pre>
 <example_edit>
 (Paste here)
 </example_edit>
@@ -205,6 +225,9 @@ After editing, briefly summarize your changes and any challenges encountered wit
 </instructions>
 
 ---
+</pre>
+
+
 
 ## Why This Prompt Works
 
